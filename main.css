@@ -1,0 +1,108 @@
+.login{
+    height: 80vh;
+    background-image: url("https://media.istockphoto.com/id/1254842513/vector/dna-digital-sequence-code-structure-with-glow-science-concept-and-nano-technology-background.jpg?s=612x612&w=0&k=20&c=3bnYURL84y-u6PQn21kt3EN2giWgZVuYvGsh59hdGU0=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.register{
+    height: 80vh;
+    background-image: url("https://media.istockphoto.com/id/1254842513/vector/dna-digital-sequence-code-structure-with-glow-science-concept-and-nano-technology-background.jpg?s=612x612&w=0&k=20&c=3bnYURL84y-u6PQn21kt3EN2giWgZVuYvGsh59hdGU0=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#imlosingit{
+    margin-top: 5%;
+}
+
+.landing{
+    height: 170vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://hips.hearstapps.com/hmg-prod/images/book-gp-appointment-1641476111.jpg?crop=0.669xw:1.00xh;0.331xw,0&resize=980:*");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.doctor{
+    height: 200vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://mcdn.wallpapersafari.com/medium/98/44/pW4bT5.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.patient{
+    height: 260vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.receptionist{
+    height: 140vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2017802/pexels-photo-2017802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar{
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.473);
+}
+
+.nav-item{
+    margin-left: 5%;
+}
+
+.headingsuper{
+    margin-top: 8%;
+    margin-bottom: 2%;
+}
+
+.table{
+    border-top: solid rgb(138, 138, 138) 5px;
+    border-bottom: solid rgb(138, 138, 138) 5px;
+    width: auto;
+}
+
+#update{
+    border-top: solid rgb(138, 138, 138) 5px;
+    border-bottom: solid rgb(138, 138, 138) 5px;
+}
+
+#new{
+    border-top: solid rgb(138, 138, 138) 5px;
+    border-bottom: solid rgb(138, 138, 138) 5px;
+}
+
+.container{
+    margin-top: 4%;
+    padding: 2%;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+}
+
+.container-fluid{
+    margin-top: 4%;
+    padding: 2%;
+    padding-bottom: 5%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432);
+    width: 65%;
+}
+
