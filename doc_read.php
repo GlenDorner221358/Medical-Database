@@ -22,7 +22,10 @@
         echo "<td>" . $row['Room'] . "</td>";
 
         // buttons
-        echo '<td><a class="btn btn-danger" href="doc_delete.php?id=' . $row['ID'] . '" role="button">Delete</a></td>';//DELETE
+        if ($_SESSION['userrank'] == 1) {
+            echo "<td><a class='btn btn-danger' href='doc_delete.php?id=" . $row['ID'] . " role='button'>Delete</a></td>";//DELETE;
+        }
+
         echo "</tr>";
     }
 

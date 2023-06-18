@@ -99,11 +99,14 @@
 
             <!-- Update a doctor -->
             <form id='update' class='form m-2' action='doc_update.php' method='POST'>
+
                 <label for='docid'>Doctor ID:</label>
                 <select class='form-control m-2' id='docid' name='docid'>
-                    <option>--SELECT DOC ID--</option>
-                    <?php include 'doc_select_ID.php'; ?>
-                </select>
+                    <option>--SELECT DOC ID--</option>";
+
+                    include 'doc_select_ID.php'; 
+
+                echo "</select>
 
                 <label for='drname'>name:</label>
                 <input type='text' class='form-control m-2' id='drname' name='drname'>
@@ -132,8 +135,10 @@
 
                 <label for='drroom'>Room:</label>
                 <select class='form-control m-2' id='drroom' name='drroom'>
-                    <option>--SELECT ROOM--</option>
-                    <?php include 'doc_select_room.php'; ?>
+                    <option>--SELECT ROOM--</option>";
+
+                    include 'doc_select_room.php'; 
+                    echo "
                 </select>
 
                 
