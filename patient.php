@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="landing.php">Hopstita</a>
+            <a class="nav-link" href="landing.php">Database</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="landing.php">Appointments</a>
@@ -95,28 +95,31 @@
         </center>
 
         <!-- Update a patient -->
-        <form id="update" class="form-inline m-2" action="pat_update.php" method="POST">
+        <form id="update" class="form m-2" action="pat_update.php" method="POST">
             <label for="patid">Patient ID:</label>
-            <input type="number" class="form-control m-4" id="patid" name="patid">
+            <select class="form-control m-2" id="patid" name="patid">
+                <option>--SELECT PAT ID--</option>
+                <?php include 'pat_select_ID.php'; ?>
+            </select>
 
             <label for="patname">Name:</label>
-            <input type="text" class="form-control m-5" id="patname" name="patname">
+            <input type="text" class="form-control m-2" id="patname" name="patname">
             
             <label for="patsurname">Surname:</label>
-            <input type="text" class="form-control m-5" id="patsurname" name="patsurname">
+            <input type="text" class="form-control m-2" id="patsurname" name="patsurname">
 
             <label for="patage">Age:</label>
-            <input type="number" class="form-control m-5" id="patage" name="patage">
+            <input type="number" class="form-control m-2" id="patage" name="patage">
 
             <label for="patgender">Gender:</label>
-            <select class="form-control m-5" id="patgender" name="patgender">
+            <select class="form-control m-2" id="patgender" name="patgender">
                 <option>--SELECT GENDER--</option>
                 <option>Male</option>
                 <option>Female</option>
             </select>
 
             <label for="patsel">Phone Number:</label>
-            <input type="tel" class="form-control m-3" id="patsel" name="patsel">
+            <input type="tel" class="form-control m-2" id="patsel" name="patsel">
 
             <label for="patmail">E-mail:</label>
             <input type="email" class="form-control m-2" id="patmail" name="patmail">
@@ -127,7 +130,7 @@
             <label for="patprev">Previous Appointments:</label>
             <input type="number" class="form-control m-2" id="patprev" name="patprev">
 
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary btn-lg m-2">Update</button>
         </form>
         
         <center>

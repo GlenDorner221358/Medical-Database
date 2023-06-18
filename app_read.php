@@ -21,7 +21,6 @@
 
         // buttons
         echo '<td><a class="btn btn-danger" href="app_delete.php?id=' . $row['ID'] . '" role="button">Delete</a></td>';//DELETE
-        echo '<td><a class="btn btn-primary" href="app_update.php?id=' . $row['ID'] . '" role="button">Update</a></td>';//UPDATE
         echo "</tr>";
     }
 

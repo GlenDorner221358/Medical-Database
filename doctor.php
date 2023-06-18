@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="landing.php">Hopstita</a>
+            <a class="nav-link" href="landing.php">Database</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="landing.php">Appointments</a>
@@ -53,85 +53,100 @@
     <div class="container-fluid drcontainer">
         <center>
         <h1> Doctors </h1>
-        <h2> Add new Doctor </h2>
         </center>
 
         <!-- New Doctors -->
-        <form id="new" class="form-inline m-3" action="doc_new.php" method="POST">
-            <label for="drname">name:</label>
-            <input type="text" class="form-control m-2" id="drname" name="drname">
-            
-            <label for="drsurname">Surname:</label>
-            <input type="text" class="form-control m-2" id="drsurname" name="drsurname">
+        <?php  
+            if ($_SESSION['userrank'] == 1) {
+                echo "<center>
+                <h2> Add new Doctor </h2>
+                </center>
+                <form id='new' class='form-inline m-3' action='doc_new.php' method='POST'>
+                <label for='drname'>name:</label>
+                <input type='text' class='form-control m-2' id='drname' name='drname'>
+                
+                <label for='drsurname'>Surname:</label>
+                <input type='text' class='form-control m-2' id='drsurname' name='drsurname'>
+    
+                <label for='drage'>Age:</label>
+                <input type='number' class='form-control m-2' id='drage' name='drage'>
+    
+                <label for='drgender'>Gender:</label>
+                <select class='form-control m-4' id='drgender' name='drgender'>
+                    <option>--SELECT GENDER--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+    
+                <label for='drsel'>Phone Number:</label>
+                <input type='tel' class='form-control m-5' id='drsel' name='drsel'>
+    
+                <label for='drmail'>E-mail:</label>
+                <input type='email' class='form-control m-4' id='drmail' name='drmail'>
+    
+                <label for='drskill'>Specialisation:</label>
+                <input type='text' class='form-control m-4' id='drskill' name='drskill'>
+    
+                <label for='drroom'>Room ID:</label>
+                <input type='number' class='form-control m-3' id='drroom' name='drroom'>
+                
+                <button type='submit' class='btn btn-primary'>Confirm</button>
+            </form>
+            <center>
+            <h2 class='headingsuper'>Update Doctor details</h2>
+            <p>Fill in the form with the details of the old info, but change what you want to update!</p>
+            </center>
 
-            <label for="drage">Age:</label>
-            <input type="number" class="form-control m-2" id="drage" name="drage">
+            <!-- Update a doctor -->
+            <form id='update' class='form m-2' action='doc_update.php' method='POST'>
+                <label for='docid'>Doctor ID:</label>
+                <select class='form-control m-2' id='docid' name='docid'>
+                    <option>--SELECT DOC ID--</option>
+                    <?php include 'doc_select_ID.php'; ?>
+                </select>
 
-            <label for="drgender">Gender:</label>
-            <select class="form-control m-4" id="drgender" name="drgender">
-                <option>--SELECT GENDER--</option>
-                <option>Male</option>
-                <option>Female</option>
-            </select>
+                <label for='drname'>name:</label>
+                <input type='text' class='form-control m-2' id='drname' name='drname'>
+                
+                <label for='drsurname'>Surname:</label>
+                <input type='text' class='form-control m-2' id='drsurname' name='drsurname'>
 
-            <label for="drsel">Phone Number:</label>
-            <input type="tel" class="form-control m-5" id="drsel" name="drsel">
+                <label for='drage'>Age:</label>
+                <input type='number' class='form-control m-2' id='drage' name='drage'>
 
-            <label for="drmail">E-mail:</label>
-            <input type="email" class="form-control m-4" id="drmail" name="drmail">
+                <label for='drgender'>Gender:</label>
+                <select class='form-control m-2' id='drgender' name='drgender'>
+                    <option>--SELECT GENDER--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
 
-            <label for="drskill">Specialisation:</label>
-            <input type="text" class="form-control m-4" id="drskill" name="drskill">
+                <label for='drsel'>Phone Number:</label>
+                <input type='tel' class='form-control m-2' id='drsel' name='drsel'>
 
-            <label for="drroom">Room ID:</label>
-            <input type="number" class="form-control m-3" id="drroom" name="drroom">
-            
-            <button type="submit" class="btn btn-primary">Confirm</button>
-        </form>
+                <label for='drmail'>E-mail:</label>
+                <input type='email' class='form-control m-2' id='drmail' name='drmail'>
+
+                <label for='drskill'>Specialisation:</label>
+                <input type='text' class='form-control m-2' id='drskill' name='drskill'>
+
+                <label for='drroom'>Room:</label>
+                <select class='form-control m-2' id='drroom' name='drroom'>
+                    <option>--SELECT ROOM--</option>
+                    <?php include 'doc_select_room.php'; ?>
+                </select>
+
+                
+                <button type='submit' class='btn btn-primary btn-lg m-2'>Update</button>
+            </form>";
+            }
+        ?>
+        
+
+        
 
         <center>
-        <h2 class="headingsuper">Update Doctor details</h2>
-        <p>Fill in the form with the details of the old info, but change what you want to update!</p>
-        </center>
-
-        <!-- Update a doctor -->
-        <form id="update" class="form-inline m-2" action="doc_update.php" method="POST">
-            <label for="docid">Doctor ID:</label>
-            <input type="number" class="form-control m-4" id="docid" name="docid">
-
-            <label for="drname">name:</label>
-            <input type="text" class="form-control m-2" id="drname" name="drname">
-            
-            <label for="drsurname">Surname:</label>
-            <input type="text" class="form-control m-2" id="drsurname" name="drsurname">
-
-            <label for="drage">Age:</label>
-            <input type="number" class="form-control m-2" id="drage" name="drage">
-
-            <label for="drgender">Gender:</label>
-            <select class="form-control m-5" id="drgender" name="drgender">
-                <option>--SELECT GENDER--</option>
-                <option>Male</option>
-                <option>Female</option>
-            </select>
-
-            <label for="drsel">Phone Number:</label>
-            <input type="tel" class="form-control m-5" id="drsel" name="drsel">
-
-            <label for="drmail">E-mail:</label>
-            <input type="email" class="form-control m-5" id="drmail" name="drmail">
-
-            <label for="drskill">Specialisation:</label>
-            <input type="text" class="form-control m-4" id="drskill" name="drskill">
-
-            <label for="drroom">Room ID:</label>
-            <input type="number" class="form-control m-3" id="drroom" name="drroom">
-            
-            <button type="submit" class="btn btn-primary">Update</button>
-        </form>
-
-        <center>
-        <h2 class="headingsuper">Doctors</h2>
+        <h2 class="headingsuper">Currently Registered Doctors</h2>
         </center>
 
         <!-- Show doctors -->

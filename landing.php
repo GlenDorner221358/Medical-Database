@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-            <a class="nav-link" href="landing.php">Hopstita</a>
+            <a class="nav-link" href="landing.php">Database</a>
             </li>
             <li class="nav-item">
             <a class="nav-link" href="landing.php">Appointments</a>
@@ -59,23 +59,29 @@
 
         <!-- New Appointments -->
         <form id="new" class="form-inline m-2" action="app_new.php" method="POST">
-            <label for="Patient">Patient ID:</label>
-            <input type="number" class="form-control m-5" id="apppat" name="apppat">
+            <label for="Patient">Patient:</label>
+            <select class="form-control m-3" id="apppat" name="apppat">
+                <option>--SELECT PATIENT--</option>
+                <?php include 'app_select_patient_names.php'; ?>
+            </select>
 
-            <label for="Doctor">Doctor ID:</label>
-            <input type="number" class="form-control m-5" id="appdr" name="appdr">
+            <label for="Doctor">Doctor:</label>
+            <select class="form-control m-3" id="appdr" name="appdr">
+                <option>--SELECT DOCTOR--</option>
+                <?php include 'app_select_doctor_names.php'; ?>
+            </select>
 
             <label for="Time">Time:</label>
-            <input type="time" class="form-control m-5" id="apptime" name="apptime">
+            <input type="time" class="form-control m-3" id="apptime" name="apptime">
 
             <label for="Date">Date:</label>
             <input type="date" class="form-control m-3" id="appdate" name="appdate">
 
             <label for="Receptionist">Receptionist ID:</label>
-            <input type="number" class="form-control m-3" id="apprep" name="apprep">
-
-            <label for="Room">Room ID:</label>
-            <input type="number" class="form-control m-3" id="approom" name="approom">
+            <select class="form-control m-4" id="apprep" name="apprep">
+                <option>--SELECT RECEPTIONIST--</option>
+                <?php include 'app_select_rep_names.php'; ?>
+            </select>
 
             <button type="submit" class="btn btn-primary">Confirm</button>
         </form>
@@ -88,27 +94,36 @@
         <!-- Update an Appointment -->
         <form id="update" class="form-inline m-2" action="app_update.php" method="POST">
             <label for="appid">Appointment ID:</label>
-            <input type="number" class="form-control m-4" id="appid" name="appid">
+            <select class="form-control m-4" id="appid" name="appid">
+                <option>--SELECT APP ID--</option>
+                <?php include 'app_select_ID.php'; ?>
+            </select>
 
-            <label for="Patient">Patient ID:</label>
-            <input type="number" class="form-control m-4" id="apppat" name="apppat">
+            <label for="Patient">Patient:</label>
+            <select class="form-control m-5" id="apppat" name="apppat">
+                <option>--SELECT PATIENT--</option>
+                <?php include 'app_select_patient_names.php'; ?>
+            </select>
 
-            <label for="Doctor">Doctor ID:</label>
-            <input type="number" class="form-control m-4" id="appdr" name="appdr">
+            <label for="Doctor">Doctor:</label>
+            <select class="form-control m-5" id="appdr" name="appdr">
+                <option>--SELECT DOCTOR--</option>
+                <?php include 'app_select_doctor_names.php'; ?>
+            </select>
 
             <label for="Time">Time:</label>
-            <input type="time" class="form-control m-2" id="apptime" name="apptime">
+            <input type="time" class="form-control m-4" id="apptime" name="apptime">
 
             <label for="Date">Date:</label>
-            <input type="date" class="form-control m-2" id="appdate" name="appdate">
+            <input type="date" class="form-control m-4" id="appdate" name="appdate">
 
             <label for="Receptionist">Receptionist ID:</label>
-            <input type="number" class="form-control m-2" id="apprep" name="apprep">
+            <select class="form-control m-4" id="apprep" name="apprep">
+                <option>--SELECT RECEPTIONIST--</option>
+                <?php include 'app_select_rep_names.php'; ?>
+            </select>
 
-            <label for="Room">Room ID:</label>
-            <input type="number" class="form-control m-2" id="approom" name="approom">
-
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary btn-lg m-2">Update</button>
         </form>
 
         <center>

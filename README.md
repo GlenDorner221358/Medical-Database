@@ -58,6 +58,10 @@ Welcome to my medical database interface. This is not a website so much as it is
 
 ### Built With
 
+HTML5
+PHP
+JS
+CSS
 
 <!-- GETTING STARTED -->
 <!-- Make sure to add appropriate information about what prerequesite technologies the user would need and also the steps to install your project on their own mashines -->

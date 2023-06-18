@@ -30,7 +30,7 @@
 }
 
 .doctor{
-    height: 200vh;
+    height: 280vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://mcdn.wallpapersafari.com/medium/98/44/pW4bT5.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -39,7 +39,7 @@
 }
 
 .patient{
-    height: 260vh;
+    height: 330vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@
 }
 
 .receptionist{
-    height: 140vh;
+    height: 230vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2017802/pexels-photo-2017802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-position: center;
     background-repeat: no-repeat;
