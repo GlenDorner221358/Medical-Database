@@ -42,8 +42,9 @@
         <?php
         $email = $_SESSION["usermail"];
         $rank = $_SESSION['userrank'];
+        $pic = $_SESSION["userpic"];
 
-        echo "$email" . " Rank: " . "$rank";
+        echo "$email" . " Rank: " . "$rank" . "<img src='pictures/" . $pic . "' width='70' height='50'>";
         ?>    
         </p>
         <form class="form-inline" action="logout.php" method="POST">

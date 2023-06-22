@@ -31,7 +31,7 @@
         </center>
     
         <!-- register new receptionists -->
-        <form id="new" class="form-inline m-2" action="reg_new.php" method="POST">
+        <form id="new" class="form-inline m-2" action="reg_new.php" method="POST" enctype="multipart/form-data">
             <label for="repname">Name:</label>
             <input type="text" class="form-control m-5" id="repname" name="repname" required>
             
@@ -52,10 +52,13 @@
             <input type="tel" class="form-control m-4" id="repsel" name="repsel" required>
 
             <label for="repmail">E-mail:</label>
-            <input type="email" value="JohnDoe@gmail.com" class="form-control m-4" id="repmail" name="repmail" required>
+            <input type="email" placeholder="JohnDoe@gmail.com" class="form-control m-4" id="repmail" name="repmail" required>
 
             <label for="reppass">Password:</label>
             <input type="text" class="form-control m-4" id="reppass" name="reppass" required>
+
+            <label for="reppic">Picture:</label>
+            <input type="file" class="form-control m-4" id="reppic" name="reppic" required accept=".jpg, .jpeg, .png">
 
             <button id="myButton" type="submit" value="register" class="btn btn-primary m-4" onclick="alerter()">Register</button>
         </form>

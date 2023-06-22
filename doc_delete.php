@@ -6,7 +6,7 @@
     $id = $_GET['id'];
 
     // SQL
-    $sql = "DELETE FROM doctors WHERE ID = $id";
+    $sql = "DELETE FROM doctors WHERE ID = '$id'";
 
     // Ends connection
     $conn->query($sql);

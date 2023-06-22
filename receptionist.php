@@ -41,8 +41,9 @@
         <span id="useremail" class="navbar-text"> <?php
         $email = $_SESSION["usermail"];
         $rank = $_SESSION['userrank'];
+        $pic = $_SESSION["userpic"];
 
-        echo "$email" . " Rank: " . "$rank";
+        echo "$email" . " Rank: " . "$rank" . "<img src='pictures/" . $pic . "' width='70' height='50'>";
         ?>    
         </p>
         <form class="form-inline" action="logout.php" method="POST">
@@ -58,7 +59,7 @@
         </center>
 
         <!-- Update a receptionist -->
-        <form id="update" class="form m-2" action="rep_update.php" method="POST">
+        <form id="update" class="form m-2" action="rep_update.php" method="POST" enctype="multipart/form-data">
             <label for="repid">Receptionist ID:</label>
             <select class="form-control m-2" id="repid" name="repid">
                 <option>--SELECT REP ID--</option>
@@ -97,6 +98,9 @@
                 <option>0</option>
             </select>
 
+            <label for="reppic">Picture:</label>
+            <input type="file" class="form-control m-2" id="reppic" name="reppic" required accept=".jpg, .jpeg, .png">
+
             <button type="submit" class="btn btn-primary btn-lg m-2">Update</button>
         </form>
         
@@ -116,6 +120,7 @@
                 <th>E-mail</th>
                 <th> Password </th>
                 <th>Rank</th>
+                <th>Picture</th>
                 <?php include 'rep_read.php'; ?>
             </tbody>
         </table>

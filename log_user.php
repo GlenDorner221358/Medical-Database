@@ -21,6 +21,7 @@
 
                 $_SESSION["usermail"] = $email;
                 $_SESSION["userrank"] = $row['Rank'];
+                $_SESSION["userpic"] = $row['Picture'];
                 header("location: landing.php");  
                 
             }

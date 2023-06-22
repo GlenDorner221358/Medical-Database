@@ -41,8 +41,9 @@
         <span id="useremail" class="navbar-text"> <?php
         $email = $_SESSION["usermail"];
         $rank = $_SESSION['userrank'];
+        $pic = $_SESSION["userpic"];
 
-        echo "$email" . " Rank: " . "$rank";
+        echo "$email" . " Rank: " . "$rank" . "<img src='pictures/" . $pic . "' width='70' height='50'>";
         ?>    
         </p>
         <form class="form-inline" action="logout.php" method="POST">
@@ -50,14 +51,14 @@
         </form> </p>
     </nav>
 
-    <div class="container">
+    <div class="container-fluid drcontainer">
         <center>
         <h1>Patients</h1>
         <h2>Add new Patients</h2>
         </center>
 
         <!-- New patient -->
-        <form id="new" class="form-inline m-2" action="pat_new.php" method="POST">
+        <form id="new" class="form-inline m-2" action="pat_new.php" method="POST" enctype='multipart/form-data'>
             <label for="patname">Name:</label>
             <input type="text" class="form-control m-5" id="patname" name="patname">
             
@@ -86,6 +87,9 @@
             <label for="patprev">Previous Appointments:</label>
             <input type="number" class="form-control m-4" id="patprev" name="patprev">
 
+            <label for='patpic'>Picture:</label>
+            <input type='file' class='form-control m-4' id='patpic' name='patpic' required accept='.jpg, .jpeg, .png'>
+
             <button type="submit" class="btn btn-primary">Confirm</button>
         </form>
 
@@ -95,7 +99,7 @@
         </center>
 
         <!-- Update a patient -->
-        <form id="update" class="form m-2" action="pat_update.php" method="POST">
+        <form id="update" class="form m-2" action="pat_update.php" method="POST" enctype='multipart/form-data'>
             <label for="patid">Patient ID:</label>
             <select class="form-control m-2" id="patid" name="patid">
                 <option>--SELECT PAT ID--</option>
@@ -130,6 +134,9 @@
             <label for="patprev">Previous Appointments:</label>
             <input type="number" class="form-control m-2" id="patprev" name="patprev">
 
+            <label for='patpic'>Picture:</label>
+            <input type='file' class='form-control m-2' id='patpic' name='patpic' required accept='.jpg, .jpeg, .png'>
+
             <button type="submit" class="btn btn-primary btn-lg m-2">Update</button>
         </form>
         
@@ -149,6 +156,7 @@
                 <th>E-mail</th>
                 <th>Medical Aid Number</th>
                 <th>Previous Appointments</th>
+                <th>Picture</th>
                 <?php include 'pat_read.php'; ?>
             </tbody>
         </table>

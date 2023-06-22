@@ -20,6 +20,7 @@
         echo "<td>" . $row['Email'] . "</td>";
         echo "<td>" . $row['MedicalAidNumber'] . "</td>";
         echo "<td>" . $row['PreviousAppointments'] . "</td>";
+        echo "<td> <img src='pictures/" . $row['Picture'] . "' height='60' width='80'> </td>";
 
         // buttons
         echo '<td><a class="btn btn-danger" href="pat_delete.php?id=' . $row['ID'] . '" role="button">Delete</a></td>';//DELETE

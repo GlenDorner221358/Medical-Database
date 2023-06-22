@@ -10,9 +10,15 @@
     $sel = $_POST["repsel"];
     $email = $_POST["repmail"];
     $password = $_POST["reppass"];
+    $picture = $_FILES["reppic"]["name"];
 
+    // script to upload image
+    $target_dir = "pictures/";
+    $target_file = $target_dir . basename($_FILES["reppic"]["name"]);
+    move_uploaded_file($_FILES["reppic"]["tmp_name"], $target_file);
+    
     // sql statement
-    $sql = "INSERT INTO receptionists (Name, Surname, Age, Gender, PhoneNumber, Email, Password) VALUES ('$name', '$surname', '$age', '$gender', '$sel', '$email', '$password')";
+    $sql = "INSERT INTO receptionists (Name, Surname, Age, Gender, PhoneNumber, Email, Password, Picture) VALUES ('$name', '$surname', '$age', '$gender', '$sel', '$email', '$password', '$picture')";
         
     $conn->query($sql);
     $conn->close();

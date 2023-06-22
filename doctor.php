@@ -41,8 +41,9 @@
         <span id="useremail" class="navbar-text"> <?php
         $email = $_SESSION["usermail"];
         $rank = $_SESSION['userrank'];
+        $pic = $_SESSION["userpic"];
 
-        echo "$email" . " Rank: " . "$rank";
+        echo "$email" . " Rank: " . "$rank" . "<img src='pictures/" . $pic . "' width='70' height='50'>";
         ?>    
         </p>
         <form class="form-inline" action="logout.php" method="POST">
@@ -61,7 +62,7 @@
                 echo "<center>
                 <h2> Add new Doctor </h2>
                 </center>
-                <form id='new' class='form-inline m-3' action='doc_new.php' method='POST'>
+                <form id='new' class='form-inline m-3' action='doc_new.php' method='POST' enctype='multipart/form-data'>
                 <label for='drname'>name:</label>
                 <input type='text' class='form-control m-2' id='drname' name='drname'>
                 
@@ -89,6 +90,9 @@
     
                 <label for='drroom'>Room ID:</label>
                 <input type='number' class='form-control m-3' id='drroom' name='drroom'>
+
+                <label for='docpic'>Picture:</label>
+                <input type='file' class='form-control m-4' id='docpic' name='docpic' required accept='.jpg, .jpeg, .png'>
                 
                 <button type='submit' class='btn btn-primary'>Confirm</button>
             </form>
@@ -98,7 +102,7 @@
             </center>
 
             <!-- Update a doctor -->
-            <form id='update' class='form m-2' action='doc_update.php' method='POST'>
+            <form id='update' class='form m-2' action='doc_update.php' method='POST' enctype='multipart/form-data'>
 
                 <label for='docid'>Doctor ID:</label>
                 <select class='form-control m-2' id='docid' name='docid'>
@@ -141,7 +145,9 @@
                     echo "
                 </select>
 
-                
+                <label for='docpic'>Picture:</label>
+                <input type='file' class='form-control m-2' id='docpic' name='docpic' required accept='.jpg, .jpeg, .png'>
+
                 <button type='submit' class='btn btn-primary btn-lg m-2'>Update</button>
             </form>";
             }
@@ -166,6 +172,7 @@
                 <th>E-mail</th>
                 <th>Specialisation</th>
                 <th>Room</th>
+                <th>Picture</th>
                 <?php include 'doc_read.php'; ?>
             </tbody>
         </table>

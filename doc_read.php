@@ -20,6 +20,7 @@
         echo "<td>" . $row['Email'] . "</td>";
         echo "<td>" . $row['Specialisation'] . "</td>";
         echo "<td>" . $row['Room'] . "</td>";
+        echo "<td> <img src='pictures/" . $row['Picture'] . "' height='60' width='80'> </td>";
 
         // buttons
         if ($_SESSION['userrank'] == 1) {

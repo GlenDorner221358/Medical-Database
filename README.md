@@ -187,6 +187,7 @@ Some Highlights I experienced during coding.
 - I was over the moon when I realized I could re-use old code for almost the entirety of all of my pages
 - Finally seeing the log-in system working after 6 hours of coding was also very very nice
 - Not having to go to DV lectures anymore during my vacation is a major plus
+- Getting working file upload was big as well
 
 
 #### Challenges
@@ -197,17 +198,15 @@ Some challenges I faced during development, including issues I solved or didn't
 
 - I had a minor issue with the width of the main containers on the doctors page, but I fixed this by using a flex container instead of a regular one.
 
-- I still don't know how to display images in my tables (thank you Tsungai)
-
 - The back issues I developed from coding for this long still haunt me.
 
 
 ### Future Implementation
 Here I outline some things I could add or improve in the future.
 
-- Maybe finally add the ability to upload and view profile pictures? (pls post the video Tsungai)
-
 - Make the front end more intuitive, like using selects and stuff
+
+- Maybe style the site a bit more
 
 ## Final Outcome
 
@@ -225,7 +224,7 @@ Here I outline some things I could add or improve in the future.
 
 
 
-[View Demonstration](https://drive.google.com/file/d/1Y7yC4d65D80lHo2FS3zYnG3kHYhzjTGt/view?usp=sharing)
+[View Demonstration](https://drive.google.com/file/d/1io-1q4qiRtcVuSaE5UwAzL14OEUA-PDh/view?usp=sharing)
 
 
 <!-- AUTHORS -->
@@ -242,7 +241,7 @@ Here I outline some things I could add or improve in the future.
 - [XAMPP](https://www.apachefriends.org/)
 
 
-[image1]: mockups/mockup1.png
-[image2]: mockups/mockup2.png
-[image3]: mockups/mockup3.png
-[image4]: mockups/mockup4.png
+[image1]: mockups/Mockup1.png
+[image2]: mockups/Mockup2.png
+[image3]: mockups/Mockup3.png
+[image4]: mockups/Mockup4.png
