@@ -211,7 +211,7 @@ Here I outline some things I could add or improve in the future.
 ## Final Outcome
 
 ### Mockups
-![image1] [image1]
+![image1][image1]
 ![image2][image2]
 ![image3][image3]
 ![image4][image4]
