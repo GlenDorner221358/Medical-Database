@@ -211,10 +211,10 @@ Here I outline some things I could add or improve in the future.
 ## Final Outcome
 
 ### Mockups
-![image1][image1]
-![image2][image2]
-![image3][image3]
-![image4][image4]
+[image1](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup1.png)
+[image2](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup2.png)
+[image3](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup3.png)
+[image4](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup4.png)
 <br>
 
 
@@ -224,7 +224,7 @@ Here I outline some things I could add or improve in the future.
 
 
 
-[View Demonstration](https://drive.google.com/file/d/1io-1q4qiRtcVuSaE5UwAzL14OEUA-PDh/view?usp=sharing)
+[View Demonstration](https://drive.google.com/file/d/1qD22Cm4aRPIMl_00YR0t-Obsui0ms0gE/view?usp=sharing)
 
 
 <!-- AUTHORS -->
@@ -239,9 +239,3 @@ Here I outline some things I could add or improve in the future.
 - [Figma](https://www.figma.com/)
 - [VScode](https://code.visualstudio.com/)
 - [XAMPP](https://www.apachefriends.org/)
-
-
-[image1]: mockups/Mockup1.png
-[image2]: mockups/Mockup2.png
-[image3]: mockups/Mockup3.png
-[image4]: mockups/Mockup4.png
