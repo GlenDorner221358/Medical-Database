@@ -211,10 +211,10 @@ Here I outline some things I could add or improve in the future.
 ## Final Outcome
 
 ### Mockups
-[image1](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup1.png)
-[image2](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup2.png)
-[image3](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup3.png)
-[image4](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup4.png)
+![image1](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup1.png)
+![image2](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup2.png)
+![image3](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup3.png)
+![image4](https://github.com/GlenDorner221358/Medical-Database/blob/main/mockups/mockup4.png)
 <br>
 
 
