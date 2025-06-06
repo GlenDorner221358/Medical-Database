@@ -143,7 +143,8 @@ Here are a couple of ways to clone this repo:
     git clone https://github.com/GlenDorner221358/Medical-Database
     ```
 
-After downloading the code, you should place the files in your htdocs folder inside of your XAMPP folder.
+After downloading the code, place the project files into your htdocs folder inside of your XAMPP installation folder. Once you do, start XAMPP and start both the apache and MySQL services. With both of these running open your web browser and enter the following URL:
+"localhost/Medical-Database/login.php". XAMPP hosts the files on your localhost address, then since the entire directory is in your htdocs folder inside of XAMPP you navigate to the correct php file using the filestructure from htdocs.
 
 ## Features and Functionality
 
